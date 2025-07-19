@@ -6,4 +6,4 @@ app = Flask(__name__)
 
 @app.route("/freeclash/<protocol>")
 def main(protocol):
-    return get(f"https://sub.crossxx.com:8443/sub/{protocol}/{int(time())}").content
+    return get(f"https://clash.crossxx.com/sub/{protocol}/{int(time())}").content
