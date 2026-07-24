@@ -1,9 +1,9 @@
 from flask import Flask
-from requests import get
-from time import time
+from scrape import CrossXXScraper
 
 app = Flask(__name__)
+scraper = CrossXXScraper()
 
 @app.route("/freeclash/<protocol>")
 def main(protocol):
-    return get(f"https://www.freeclash.top/v1/sub/{protocol}/{int(time())}").content
+    return scraper.get(protocol)
