@@ -16,7 +16,7 @@ class CrossXXScraper:
         "vmess" : None,
         "ssr" : None
     }
-    cookies = {"clash_ui_verified" : "djE6MTc4NzQwODIwNw.RR6HG65LrdFhWGBmYAYQpfjn4rwH1uzoEzoXMYh9r4w"}
+    cookies = {"clash_ui_verified" : "djE6MTc5MDI1ODExOA.Kuf1g14i59I1Qc_YkcC7xIydUPOm9Dg_UjvvCAIzwPs"}
 
     def get(self, subType):
         print("getting "+subType)
